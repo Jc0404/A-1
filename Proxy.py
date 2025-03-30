@@ -40,6 +40,7 @@ except:
 try:
   # Listen on the server socket
   # ~~~~ INSERT CODE ~~~~
+  serverSocket.listen(5) # Allow up to 5 clients to wait
   # ~~~~ END CODE INSERT ~~~~
   print ('Listening to socket')
 except:
