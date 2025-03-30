@@ -123,6 +123,8 @@ while True:
     # ~~~~ END CODE INSERT ~~~~
     cacheFile.close()
     print ('Sent to the client:')
+    #print (cacheData)      # debug test 
+    cacheData = ''.join(cacheData) # debug: list converted to characters
     print ('> ' + cacheData)
   except:
     # cache miss.  Get resource from origin server
