@@ -1,1 +1,16 @@
 http.badssl.com/
+httpbin.org/
+www.google.com/
+http-textarea.badssl.com/
+data.iana.org/
+example.com/
+ipv4.download.thinkbroadband.com/
+jsonplaceholder.typicode.com/
+www.gmail.com/
+
+# icon.png
+# icon-red-via-proxy.png
+*.png
+
+test.txt
+
