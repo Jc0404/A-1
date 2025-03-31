@@ -1,0 +1,101 @@
+commit fe38c272dd73501539c9ec027ecade84237b8dee
+Author: a1868575 <109933704+a1868575@users.noreply.github.com>
+Date:   Mon Mar 31 12:46:26 2025 +1030
+
+    Tried the required tests, checked Piazza to solve the PNG file corruption issue, also tried other test provided on Piazza
+
+commit 4f500bfaf1b82487888a49289e2282ca4175109e
+Author: a1868575 <109933704+a1868575@users.noreply.github.com>
+Date:   Mon Mar 31 01:21:17 2025 +1030
+
+    Fix cache hit data format issue. After cache hit, send to the client return empty. 'curl -iS' and 'cat' command works fine no issues. Debugged with 'print(cacheData)', found cacheData as list. Issue was caused by concatenating a string and list. Use ''.join(cacheData) to fix
+
+commit b2dafa8e619ec1754f43d02df172919ed1eb59c1
+Author: a1868575 <109933704+a1868575@users.noreply.github.com>
+Date:   Mon Mar 31 00:18:46 2025 +1030
+
+    Save origin server response in the cache file
+
+commit 78ea6afc1a41f019784ee1f2ca53ae17c3a76390
+Author: a1868575 <109933704+a1868575@users.noreply.github.com>
+Date:   Mon Mar 31 00:12:31 2025 +1030
+
+    Send the response to the client
+
+commit 1a1ff25a876f8b493274fcd93d9e8efe8638aaee
+Author: a1868575 <109933704+a1868575@users.noreply.github.com>
+Date:   Mon Mar 31 00:09:39 2025 +1030
+
+    Get the response form the origin server and create gitignore
+
+commit dc8aa86aae9a95250a903373634469d0f006b487
+Author: a1868575 <109933704+a1868575@users.noreply.github.com>
+Date:   Sun Mar 30 17:41:39 2025 +1030
+
+    Create origin server request line and headers to send
+
+commit 2b7651c7b3ab1e045fa0a90c12a15186d5e96804
+Author: a1868575 <109933704+a1868575@users.noreply.github.com>
+Date:   Sun Mar 30 17:12:02 2025 +1030
+
+    Connect the origin server using the resolved IP address of the hostname and the default HTTP port 80
+
+commit 21408b614196195b68050f57785a1391ff28c3ac
+Author: a1868575 <109933704+a1868575@users.noreply.github.com>
+Date:   Sun Mar 30 16:54:53 2025 +1030
+
+    Create a socket to connect to origin server
+
+commit dbf9b6a7c72745e7e391abcd116c8d757c57ef5a
+Author: a1868575 <109933704+a1868575@users.noreply.github.com>
+Date:   Sun Mar 30 16:47:20 2025 +1030
+
+    Iterate through each line of the cache file, encode it to bytes, and send it to the client
+
+commit d1c51417775a681b1bcbe39e03a5a0f7e9b03ab9
+Author: a1868575 <109933704+a1868575@users.noreply.github.com>
+Date:   Sun Mar 30 15:21:42 2025 +1030
+
+    Get HTTP request from client. By using BUFFER_SIZE to limited the maximum number of bytes read at a time
+
+commit d86a0133493a1c40f18e2c77e03f4a63f73a4507
+Author: a1868575 <109933704+a1868575@users.noreply.github.com>
+Date:   Sun Mar 30 15:08:03 2025 +1030
+
+    The client connection is established
+
+commit bced4f72db4115afead9b22ffbc13cf18a3f1616
+Author: a1868575 <109933704+a1868575@users.noreply.github.com>
+Date:   Sun Mar 30 14:57:52 2025 +1030
+
+    Start listening and allow up to 5 clients to wait
+
+commit 3854458fdb120cda843c1a7c3946c473dd3352b9
+Author: a1868575 <109933704+a1868575@users.noreply.github.com>
+Date:   Sun Mar 30 14:50:53 2025 +1030
+
+    Bind the server socket to a proxyHost and proxyPort
+
+commit 6275c5f5ad65a4a5bec4d8a4821104ef82dbd66e
+Author: a1868575 <109933704+a1868575@users.noreply.github.com>
+Date:   Sun Mar 30 14:42:12 2025 +1030
+
+    Create a server socket
+
+commit c62601d548782453ecf77c6c9d14245705b1914f
+Author: a1868575 <109933704+a1868575@users.noreply.github.com>
+Date:   Mon Mar 24 21:03:24 2025 +1030
+
+    change the file name to Proxy.py
+
+commit 4ba20133c1e2db2ea3e6d52d059f0a19f6753a59
+Author: Jc0404 <112538493+Jc0404@users.noreply.github.com>
+Date:   Mon Mar 24 20:14:06 2025 +1030
+
+    Add files via upload
+
+commit ab1c50995054f4c4db696b4014bd997640d161ca
+Author: Jc0404 <112538493+Jc0404@users.noreply.github.com>
+Date:   Sun Mar 23 15:46:19 2025 +1030
+
+    Initial commit
